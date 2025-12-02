@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@media screen and (max-width: 1000px) {
+
+    header {
+        padding: 0;
+    }
+
+    header img{
+    width: 100px;
+    }
+
+    main {
+    width: 100%;
+    }
+
+    h1 {
+    display: none;
+    
+    }
+
+    h2 {
+    display: none;
+    }
+
+    .left-part {
+    padding: 0;
+    padding-right: 10px;
+    width: auto;
+    }
+
+    .left-part li {
+        font-size: 0.5rem;
+    }
+
+    input {
+    width: 50px;
+    }
+
+    .add {
+        scale: 0.5;
+    }
+
+    li {
+    font-size: 0.7rem;
+    }
+
+
+    .flex {
+    margin: 0px;
+    display: flex;
+    gap: 5px;
+    justify-content: left;
+    }
+
+    .editBtn {
+    display: none;
+    }
+
+
+    .removeBtn {
+    scale: 0.5;
+    margin-left: -20px;
+    }
+
+    .right-part-tasks li{
+        font-size: 0.5rem;
+        padding: 5px;
+    }
+
+    .urgentlyBtns {
+        scale: 0.5;
+    }
+
+    footer {
+        scale: 0.5;
+    }
+}
+
+
+
+
+header {
+    box-sizing: border-box;
+    padding: 0px 20% 10px 20%;
+    display: flex;
+    align-items: center;
+    background: #32012f;
+    box-shadow: 2px 2px 4px rgb(139, 134, 134);
+    width: 100%;
+    
+    
+}
+
+header img {
+    width: 250px;
+    transform: rotate(-5deg);
+}
+
+h1 {
+    margin: 0 auto;
+    font-family: Montserrat Alternates;
+    text-shadow: 2px 2px 4px rgb(139, 134, 134);
+    font-size: 3.5rem;
+    color: antiquewhite;
+}
+
+h2 {
+    padding: 2% 0% 0% 15%;
+    font-family: Montserrat Alternates;
+    font-size: 1.5rem;
+    color: rgb(53, 51, 51);
+    text-shadow: 2px 2px 4px rgb(139, 134, 134);
+}
+
+main {
+    display: flex;
+    
+}
+
+.left-part {
+    padding: 1.5%;
+    padding-right: 10%;
+    border-right: 2px dotted rgb(135, 97, 179);
+    width: 45%;
+}
+
+input {
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgb(139, 134, 134);
+    font-family: Bellota;
+    color: rgb(36, 33, 33);
+    font-size: 1rem;
+}
+
+
+.add {
+    margin: 10px;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 4px rgb(139, 134, 134);
+    font-family: Bellota;
+    color: rgb(36, 33, 33);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.day, .month, .year {
+    width: 10%;
+}
+
+li {
+    display: flex;
+    margin: 5% 0px;
+    font-family: Montserrat Alternates;
+    color: black;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex p {
+    margin-right: 30px;
+}
+
+.editBtn, .doneBtn {
+    width: max-content;
+    padding: 7px 15px;
+    background: rgb(181, 243, 56);
+    color: rgb(65, 62, 62);
+    font-family: Bellota;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgb(139, 134, 134);
+
+}
+
+.editBtn:hover, .doneBtn:hover {
+    background: rgb(107, 175, 6);
+    box-shadow: none;
+}
+
+
+.removeBtn, .postponeBtn {
+    width: max-content;
+    padding: 7px 15px;
+    background: darkorange;
+    color: rgb(65, 62, 62);
+    font-family: Bellota;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgb(139, 134, 134);
+    margin-top: 10px;
+}
+
+.removeBtn:hover, .postponeBtn:hover {
+    background: rgb(255, 102, 0);
+    box-shadow: none;
+}
+
+.right-part-tasks {
+    margin: 2px 15px;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.urgently {
+    border: 2px dotted rgb(135, 97, 179);
+    padding: 15px;
+}
+
+.urgentlyBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+.complete p{
+    text-decoration: line-through;
+    color: rgb(114, 107, 107);
+}
+
+footer {
+    text-align: center;
+    padding: 3%;
+    font-family: Bellota;
+    font-weight: 600;
+}
+

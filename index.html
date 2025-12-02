@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Напоминалка</title>
+    <meta name="description" content="Удобный онлайн-планировщик дел c напоминанием">
+    <link rel="icon" href="fav.png" type="image/png"> 
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="i1.jpg" alt="...">
+        <h1>Напоминалка</h1>
+    </header>
+
+    <main>
+        <div class="left-part">
+            <div class="inputs">
+                <input class="name" placeholder="Новая задача">
+                <input  class="day" type="number" min="1" max="31" placeholder="День"  required>
+                <input  class="month" type="number" min="1" max="12" placeholder="Месяц" required>
+                <input  class="year" type="number" min="2025"  placeholder="Год" required>
+                <button class="add">Добавить</button>
+            </div>
+            <ul class="taskList">   
+            </ul>
+        </div>
+
+        <div class="right-part">
+            <h2>Ближайшие задачи:</h2>
+            <ul class = "right-part-tasks">
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>© Анастасия Милова, 2025 г.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

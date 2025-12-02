@@ -34,9 +34,21 @@
         font-size: 0.5rem;
     }
 
-    input {
-    width: 50px;
+    .day {
+    font-size: 0.5rem;
     }
+
+    .month {
+    font-size: 0.5rem;
+    }
+
+    .year {
+    font-size: 0.5rem;
+    }
+     .name {
+    font-size: 0.5rem;
+    }
+
 
     .add {
         scale: 0.5;

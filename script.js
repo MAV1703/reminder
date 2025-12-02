@@ -115,10 +115,23 @@ function addTaskToList(obj){
     
 }
 
+//Проверяем/ограничиваем имя задачи
+taskNameInput.addEventListener('input', ()=>{
+    if(taskNameInput.value.length == 100){
+        taskNameInput.style.border = '2px solid red';
+    } else if(taskNameInput.value.length<100){
+        taskNameInput.style.border = 'none';
+    }
+})
+
+
 //Добавляем обработчик события на кнопку, сохраняем введенные данные в массив объектов
 add.addEventListener('click', ()=>{
+    //проверяем корректность введенной даты
     if(taskNameInput.value && dayInput.value && monthInput.value && yearInput.value){
-    let task = {name:taskNameInput.value,
+        let today = new Date();
+        if((dayInput.value>=1 && dayInput.value<32) && (monthInput.value>=1 && monthInput.value<=12) && (yearInput.value>=today.getFullYear() && yearInput.value.length==4)) {
+        let task = {name:taskNameInput.value,
                 date:dayInput.value + '.' + monthInput.value + '.' +yearInput.value
                 };
     addTaskToList(task);
@@ -130,6 +143,10 @@ add.addEventListener('click', ()=>{
     yearInput.value = '';
     }
 
+    else {
+        alert('Проверьте корректность введённых данных');
+    }
+}
 });
 
 // Функция для сохранения задач в локальном хранилище
@@ -210,6 +227,7 @@ function TaskFilter(obj){
 
             //Добавляем кнопки к срочным задачам
             let buttons = document.createElement('div');
+            buttons.classList.add('urgentlyBtns');
 
             //Кнопка "выполнено" с обработчиком и стилизацией
             let doneBtn = document.createElement('button');

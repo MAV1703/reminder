@@ -117,9 +117,9 @@ function addTaskToList(obj){
 
 //Проверяем/ограничиваем имя задачи
 taskNameInput.addEventListener('input', ()=>{
-    if(taskNameInput.value.length == 100){
+    if(taskNameInput.value.length == 55){
         taskNameInput.style.border = '2px solid red';
-    } else if(taskNameInput.value.length<100){
+    } else if(taskNameInput.value.length<55){
         taskNameInput.style.border = 'none';
     }
 })
